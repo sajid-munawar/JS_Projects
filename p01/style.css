@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsla(0, 0%, 50%, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    
+}
+
+.container {
+    background-color: white;
+    border-radius: 5px;
+    width: 450px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.4);
+
+}
+
+h2 {
+    text-align: center;
+    /* padding: px; */
+    margin-bottom: 10px;
+}
+
+
+.form {
+    padding: 20px 30px;
+}
+.form-control label {
+    display: block;
+    padding: 10px;
+}
+.form-control small {
+    display: block;
+}
+.btn {
+    width: 100%;
+}
