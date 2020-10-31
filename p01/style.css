@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 * {
     box-sizing: border-box;
+}
+
+:root {
+    --success-color:limegreen;
+    --error-color: orangered;
+
 }
 
 body {
     background-color: hsla(0, 0%, 50%, 0.1);
     display: flex;
+    font-family: 'Open Sans', sans-serif;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -28,14 +37,38 @@ h2 {
 
 
 .form {
-    padding: 20px 30px;
+    padding: 30px 40px;
 }
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
 .form-control label {
     display: block;
-    padding: 10px;
+    color: gray;
+    margin-bottom: 5px;
 }
+
+.form-control input {
+    border: 2px solid lightgray;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: gray;
+}
+
 .form-control small {
     display: block;
+    visibility: hidden;
+
 }
 .btn {
     width: 100%;
