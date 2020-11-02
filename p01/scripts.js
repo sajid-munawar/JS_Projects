@@ -21,7 +21,7 @@ function isValidEmail(input) {
         showError(input,"Email is required")
     }else if( re.test(String(input.value).toLowerCase())){
         showSuccess(input)
-    }else{
+    } else{
         showError(input,"Invalid email")
     }
 }
@@ -53,7 +53,7 @@ function checkReaquired(inputArray) {
         if (input.value === "") {
             showError(input, `${getProperCase(input)} is required`)
         } else (showSuccess(input))
-    });
+    })
 }
 
 form.addEventListener('submit', function (e) {

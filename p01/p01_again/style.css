@@ -58,7 +58,7 @@ small {
     left: 0;
     visibility: hidden;
 }
-small.error {
+.error small {
     visibility: visible;
 }
 .form-control.error input {
@@ -103,5 +103,5 @@ input:focus {
     border-color: lightgray;
     border-radius: 4px;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 20px ;
 }
