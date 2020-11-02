@@ -20,25 +20,19 @@ function isValidEmail(email){
     return re.test(String(email).toLowerCase());
 }
 
+function getProperCase(input){
+    return input.id.charAt(0).toUpperCase() + input.id.slice(1)    
+}
+
+function checkReaquired(inputArray){
+    inputArray.forEach(function(input){
+        if(input.value===""){
+            showError(input,`${getProperCase(input)} is required`)
+        }else(showSuccess(input))
+    });
+}
 
 form.addEventListener ('submit',function(e){
     e.preventDefault();
-    if (username.value===""){
-        showError(username,"Please provide a username")
-    }else (showSuccess(username))
-
-    if (email.value===""){
-        showError(email,"Please provide an email ")
-    }else if (!isValidEmail(email.value)){
-        showError(email,"Invalid Email")
-    }else (showSuccess(email))
-
-    if (password.value===""){
-        showError(password,"Please provide a Password")
-    }else (showSuccess(password))
-
-    if (password2.value===""){
-        showError(password2,"Please provide a Password")
-    }else (showSuccess(password2))
-
+    checkReaquired([username,email,password,password2])
 })
