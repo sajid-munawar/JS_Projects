@@ -44,7 +44,7 @@ function checkLength(input, min, max) {
 
 function checkPassword(input,input2){
     if (input.value!==input2.value){
-        showError(input2,"Password does not match")
+        showError(input2,"Passwords don't match")
     }
 }
 
